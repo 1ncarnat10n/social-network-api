@@ -1,34 +1,34 @@
-const {Schema, model} = require('mongoose');
+const { Schema, Types } = require('mongoose');
 
 const reactionSchema = new Schema(
     {
-        reactionID:{
-            type:Schema.Types.ObjectId,
+        reactionID: {
+            type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId(),
         },
 
-        reactionBody:{
-            type:String,
+        reactionBody: {
+            type: String,
             required: true,
-            maxLength: 280, 
+            maxLength: 280,
         },
 
-        username:{
-            type:String,
-            required:true,
+        username: {
+            type: String,
+            required: true,
         },
 
-        createAt:{
+        createAt: {
             type: Date,
             default: Date.now,
         }
     },
 
     {
-        toJSON:{
-            getters:true,
+        toJSON: {
+            getters: true,
         },
-        id:false,
+        id: false,
     }
 );
 

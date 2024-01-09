@@ -9,7 +9,7 @@ This project addresses the fundamental challenge of building a scalable and user
 
 ## Video Demo URL
 
-Social Network API Demo Video
+[Social Network API Demo Video](https://drive.google.com/file/d/1cI73xBpry7aviO9Z9lqNa_Q_iWROyrJR/view)
 
 ## Installation
 
